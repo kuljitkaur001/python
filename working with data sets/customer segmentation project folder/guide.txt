@@ -1,0 +1,7 @@
+run this path in terminal
+
+  cd "C:\Users\hp\OneDrive\python\python\working with data sets\customer segmentation project folder"
+
+  then run stremalit as 
+   stremalit run "file name "
+   stremalit run app.py

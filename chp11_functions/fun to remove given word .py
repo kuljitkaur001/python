@@ -1,0 +1,1 @@
+#  write a pythion function to remove a given word from list and strip it at the same time 
