@@ -2,6 +2,15 @@ run this path in terminal
 
   cd "C:\Users\hp\OneDrive\python\python\working with data sets\customer segmentation project folder"
 
+  cd "F:\python\working with data sets\customer segmentation project folder"
+
   then run stremalit as 
    stremalit run "file name "
    stremalit run app.py
+
+
+   raw data path 
+
+   python "f:\python\working with data sets\customer_segmentation_updated\001._building_rfm.py" --input "C:\Users\hp\OneDrive\python\python\working with data sets\Online_Retail_.csv"
+
+   cd "f:\python\working with data sets\customer_segmentation_updated"

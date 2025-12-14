@@ -23,7 +23,7 @@ uploaded_file = st.file_uploader("Upload a CSV file with Recency, Frequency, Mon
 def predict_segments(df):
     # Unsupervised clustering
     X_scaled = scaler.transform(df[["Recency", "Frequency", "Monetary"]])
-    clusters = kmeans.predict(X_scaled)
+    clusters = kmeans.predict(X_scaled) 
     df["Cluster"] = clusters
 
     # Supervised segment classification

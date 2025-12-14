@@ -1,0 +1,167 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* --- Vibrant Contrast Theme --- */
+:root {
+    --sidebar-bg: #f73600;
+    --main-bg: #fff9d3;
+    --text-color: #f73600;
+    --sidebar-text: #fff9d3;
+    --primary-color: #00467f;
+    --font-family: 'Montserrat', sans-serif;
+    --card-bg: #ffffff;
+    --card-border: 1px solid #f73600;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar during animation */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+/* --- Main Layout --- */
+#app-container { display: flex; }
+#sidebar {
+    position: fixed; top: 0; left: 0; bottom: 0;
+    width: 20rem; padding: 2rem 1rem;
+    background-color: var(--sidebar-bg); color: var(--sidebar-text);
+    transition: left 0.3s ease-in-out; /* Animation for sliding */
+    z-index: 100;
+}
+#page-content {
+    margin-left: 22rem; padding: 2rem 3rem; width: 100%;
+    transition: margin-left 0.3s ease-in-out; /* Animation for content shift */
+}
+
+/* --- Sidebar Hidden State --- */
+.sidebar-hidden #sidebar {
+    left: -22rem; /* Move sidebar off-screen */
+}
+.sidebar-hidden #page-content {
+    margin-left: 2rem; /* Reduce margin when sidebar is hidden */
+}
+
+/* --- Sidebar Toggle Buttons --- */
+#hide-sidebar-btn, #show-sidebar-btn {
+    background: var(--primary-color);
+    color: var(--sidebar-text);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1000;
+}
+#hide-sidebar-btn {
+    top: 10px;
+    right: 10px;
+}
+#show-sidebar-btn {
+    position: fixed; /* Keep it fixed on the viewport */
+    top: 10px;
+    left: 10px;
+}
+
+/* --- Sidebar Navigation Links --- */
+#nav-links a {
+    display: block; padding: 10px 15px; margin: 10px 0;
+    color: var(--sidebar-text); text-decoration: none;
+    border: 1px solid var(--sidebar-text); border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+#nav-links a:hover {
+    background-color: var(--main-bg); color: var(--sidebar-bg);
+    border-color: var(--sidebar-bg);
+}
+#nav-links a.active {
+    background-color: #f5e6a8; color: var(--sidebar-bg); font-weight: bold;
+}
+
+/* --- Engaging Overview Page --- */
+.overview-header {
+    display: flex; align-items: center;
+    gap: 30px; margin-bottom: 40px;
+}
+.overview-header img { max-width: 300px; border-radius: 15px; }
+.stat-card {
+    background-color: var(--card-bg);
+    border-left: 5px solid var(--primary-color);
+    padding: 20px; border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;
+}
+.stat-number {
+    font-size: 2.5rem; font-weight: 700; color: var(--primary-color);
+}
+
+/* --- Custom File Uploader --- */
+.custom-uploader-container {
+    border: 3px dashed var(--text-color);
+    border-radius: 15px;
+    padding: 30px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+}
+.custom-uploader-container:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.uploader-text-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.uploader-text-icon .icon {
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+/* --- Accordion-style Tabs for Performance Page --- */
+.accordion-tabs .tab {
+    cursor: pointer; padding: 15px;
+    border: 1px solid var(--text-color); border-radius: 8px;
+    margin-bottom: 10px; transition: background-color 0.3s;
+}
+.accordion-tabs .tab.selected {
+    background-color: var(--text-color); color: var(--main-bg);
+}
+
+/* --- Customer Profile Card --- */
+.profile-card {
+    background-color: var(--card-bg); border: var(--card-border);
+    border-radius: 10px; padding: 25px; margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.profile-card h4 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px; margin-top: 0;
+}
+.profile-card .recommendation {
+    background-color: #e3f2fd; color: #1e3a8a;
+    padding: 15px; border-radius: 8px; margin-top: 15px;
+}
+
+/* --- General Button --- */
+.button {
+    background-color: var(--sidebar-bg); color: var(--sidebar-text);
+    border: none; padding: 15px 30px; border-radius: 8px;
+    cursor: pointer; font-weight: bold; font-size: 1rem;
+    transition: background-color 0.2s;
+}
+.button:hover {
+    background-color: #d62f00; /* Darker red */
+}

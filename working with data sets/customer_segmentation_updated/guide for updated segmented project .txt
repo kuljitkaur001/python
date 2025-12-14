@@ -1,0 +1,18 @@
+for first file 
+
+python "f:\python\working with data sets\customer_segmentation_updated\001._building_rfm.py" --input "F:\python\working with data sets\Online_Retail_.csv"
+
+
+for fifth file 
+
+first change directory using 
+cd , come ot the project folder ,, then copy this 
+
+python "F:\python\working with data sets\customer_segmentation_updated\005_build_cohort.py" --input "F:\python\working with data sets\Online_Retail_.csv"
+
+
+for 004_app.py 
+
+cd "folder address "  
+run 
+python 004_app.py

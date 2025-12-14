@@ -1,6 +1,7 @@
 # Create a list [1, 2, 3] and print the sum of all its elements.
 list10 = [1,2,3,4,5]
 print(sum(list10))
+print(max(list10))
 
 
 # using for loop 
