@@ -6,5 +6,5 @@ def palindrome(a):
     else:
         print("not a palindrome")
 
-str = input("enter a string ")
+str = input("enter a string ") 
 palindrome(str)

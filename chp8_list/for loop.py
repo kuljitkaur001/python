@@ -35,7 +35,7 @@ for i in list1:
 
 # for loop with else statement
 print("\n \n for loop with else statement ")
-list2 = ["prianka","manpreet", "rfd", "jegqkwasd"]
+list2 = ["prianka","pinki", "rfd", "jegqkwasd"]
 for item in list2:
     print(item)
 

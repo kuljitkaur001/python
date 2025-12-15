@@ -1,5 +1,9 @@
-# 
-class details:
-    def cals(self,a,b):
-        self.a = a 
-        self.b = b 
+try:
+    a = 10
+    b= 0
+    c= a/b
+    print(c)
+except Exception as e : 
+    print("invaid input, use something other", e)
+# except ZeroDivisionError:
+#     print("division by zero ")

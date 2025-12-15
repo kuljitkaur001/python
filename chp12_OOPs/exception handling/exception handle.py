@@ -12,7 +12,7 @@ except ZeroDivisionError:
 try:
     a = 12
     b = 0   
-    c = a/b  
+    c = a/b   
     print(c)
 except ValueError:
     print("Invalid value!")

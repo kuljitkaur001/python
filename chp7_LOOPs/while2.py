@@ -1,6 +1,6 @@
 # while Loop
 
-l = [1, "harry", "false", "this", "rohan", "manpreet"]
+l = [1, "harry", "false", "this", "rohan", "pinki"]
 
 i = 0 
 while(i<len(l)):
