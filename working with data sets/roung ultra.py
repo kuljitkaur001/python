@@ -1,10 +1,6 @@
-def palindrome(s):
-    if(s == s[ : :-1]):
-        print("yes plaindorme ")
-    else:
-        print("not baby, its not ")
-
-str= input("enter a string bro : ")
-palindrome(str)
-
-    
+try:
+    a=12
+    b= 0
+    c=a/b
+except Exception as e:
+    print("divisible by zero ")
