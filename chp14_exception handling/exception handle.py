@@ -51,3 +51,5 @@ else:
 
 finally: #keywword...... continue evne if have error 
     print("execution finish ")
+    print("execution finish ")
+    print("execution finish ")
