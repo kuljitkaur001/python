@@ -4,7 +4,7 @@
 import dash
 from dash import dcc, html, dash_table
 from dash_extensions.enrich import Output, Input, dcc, State
-import pandas as pd
+import pandas as pd 
 import joblib
 from pathlib import Path
 import plotly.express as px
