@@ -21,3 +21,5 @@ if is_palindrome:
     print("palindrome")
 else:
     print("not a palindrome")
+
+    
