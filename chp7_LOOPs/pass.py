@@ -10,8 +10,3 @@ for i in range(1,9):
 
 
 
-# while loop need two variabke 
-p = 0
-while(p<10):
-    print(p)
-    p +=1
