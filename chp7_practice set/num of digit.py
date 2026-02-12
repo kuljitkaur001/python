@@ -3,7 +3,7 @@
 a = int(input("enter a number : "))
 count = 0
 # c = len(a)
-while(a>0): 
+while(a>0):   #10 , 10//10 = 1
     a = a//10
     count = count+1
 print(count)
